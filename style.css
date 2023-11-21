@@ -1,0 +1,342 @@
+:root {
+  --clr-primary: hsl(25, 97%, 53%);
+
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-lightgrey: hsl(217, 12%, 63%);
+  --clr-neutral-mediumgrey: hsl(216, 12%, 54%);
+  --clr-neutral-darkblue: hsl(213, 19%, 18%);
+  --clr-neutral-darkblue2: hsl(213, 19%, 22%);
+  --clr-neutral-textdarkblue: hsl(213, 19%, 25%);
+  --clr-neutral-verydarkblue: hsl(216, 12%, 8%);
+
+  --ff-base: "Overpass", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+main {
+  font-size: 15px;
+}
+
+/* IMAGES */
+
+.icon_star {
+  border: none;
+  border-radius: 50px;
+  padding: 14px;
+  background-color: var(--clr-neutral-textdarkblue);
+  margin-bottom: 20px;
+}
+
+.img_thankyou {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+/* BUTTONS */
+.rating_btns {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--fw-bold);
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.rating_btn1 {
+  color: var(--clr-neutral-lightgrey);
+  border: none;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 100px;
+  background-color: var(--clr-neutral-textdarkblue);
+
+  cursor: pointer;
+}
+
+.rating_btn2 {
+  color: var(--clr-neutral-lightgrey);
+  border: none;
+  padding-right: 22px;
+  padding-left: 22px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 100px;
+  background-color: var(--clr-neutral-textdarkblue);
+
+  cursor: pointer;
+}
+
+.rating_btn3 {
+  color: var(--clr-neutral-lightgrey);
+  border: none;
+  padding-right: 22px;
+  padding-left: 22px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 100px;
+  background-color: var(--clr-neutral-textdarkblue);
+
+  cursor: pointer;
+}
+
+.rating_btn4 {
+  color: var(--clr-neutral-lightgrey);
+  border: none;
+  padding-right: 22px;
+  padding-left: 22px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 100px;
+  background-color: var(--clr-neutral-textdarkblue);
+
+  cursor: pointer;
+}
+
+.rating_btn5 {
+  color: var(--clr-neutral-lightgrey);
+  border: none;
+  padding-right: 22px;
+  padding-left: 22px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 100px;
+  background-color: var(--clr-neutral-textdarkblue);
+
+  cursor: pointer;
+}
+
+.submit_btn {
+  width: 340px;
+  text-transform: uppercase;
+
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-white);
+  border-style: none;
+  letter-spacing: 2px;
+
+  margin-top: 10px;
+
+  padding-top: 12px;
+  padding-bottom: 9px;
+
+  border-radius: 50px;
+
+  font-weight: var(--fw-bold);
+
+  cursor: pointer;
+}
+
+.submit_btn:hover {
+  background-color: var(--clr-neutral-white);
+  color: var(--clr-primary);
+  transition: ease 0.5s;
+}
+
+.rating_btn1:hover,
+.rating_btn2:hover,
+.rating_btn3:hover,
+.rating_btn4:hover,
+.rating_btn5:hover {
+  background-color: var(--clr-neutral-mediumgrey);
+  color: var(--clr-neutral-white);
+  transition: ease 0.5s;
+}
+
+.btn:focus {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-white);
+  box-shadow: 0px 0px 10px var(--clr-primary);
+  transition: ease 0.5s;
+}
+
+/* BODY */
+
+body {
+  font-family: var(--ff-base);
+  font-size: 15px;
+  background-color: var(--clr-neutral-verydarkblue);
+}
+
+.container {
+  max-height: 420px;
+  height: auto;
+  width: 420px;
+
+  background: linear-gradient(
+    var(--clr-neutral-darkblue2),
+    var(--clr-neutral-darkblue)
+  );
+
+  border: none;
+  border-radius: 30px;
+
+  display: grid;
+
+  margin: auto;
+
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+  overflow: hidden;
+}
+
+.inner_container {
+  margin: 40px;
+}
+
+/* .rating_container {
+  display: grid;
+  align-items: center;
+} */
+
+.header1,
+.header2 {
+  color: var(--clr-neutral-white);
+  font-size: 30px;
+  font-weight: var(--fw-bold);
+}
+
+.text_rating,
+.text_thankyou {
+  color: var(--clr-neutral-lightgrey);
+}
+
+.text_finalrating {
+  color: var(--clr-primary);
+  background-color: var(--clr-neutral-textdarkblue);
+  display: grid;
+  justify-content: center;
+  border: none;
+  border-radius: 50px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.number {
+  font-weight: var(--fw-bold);
+  font-size: 17px;
+}
+
+.header2 {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.text_thankyou {
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+@media (max-width: 450px) {
+  body {
+    display: grid;
+    align-items: center;
+    transform: scale(0.8);
+  }
+}
